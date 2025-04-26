@@ -14,7 +14,7 @@ const meta: Meta<typeof AButton> = {
     },
     variant: {
       control: 'select',
-      options: ['primary', 'secondary', 'danger'],
+      options: ['primary', 'success', 'warning', 'danger'],
       description: 'Estilo visual do botão',
     },
     icon: {
@@ -47,7 +47,7 @@ export const Default: Story = {
   args: {
     label: 'Clique aqui',
     size: 'md',
-    variant: 'primary',
+    // variant: 'primary',
     icon: 'check',
   },
 }

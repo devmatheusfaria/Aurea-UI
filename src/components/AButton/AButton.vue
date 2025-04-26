@@ -28,7 +28,7 @@ import './AButton.scss'
 const props = defineProps<{
   label?: string
   size?: 'sm' | 'md' | 'lg'
-  variant?: 'primary' | 'secondary' | 'danger'
+  variant?: 'primary' | 'success' | 'warning' | 'danger'
   icon?: string
   iconRight?: string
   rounded?: string | number
@@ -50,12 +50,20 @@ const variantStyles = computed(() => {
     }
   }
 
-  const variants = {
-    primary: { backgroundColor: '#0066cc', color: '#ffffff' },
-    secondary: { backgroundColor: '#e0e0e0', color: '#333333' },
-    danger: { backgroundColor: '#d32f2f', color: '#ffffff' },
+  if (props.variant) {
+    const variants = {
+      primary: { backgroundColor: '#0a84ff', color: '#ffffff' },
+      success: { backgroundColor: '#30d158', color: '#ffffff' },
+      warning: { backgroundColor: '#ffd60a', color: '#000000' },
+      danger: { backgroundColor: '#ff453a', color: '#ffffff' },
+    }
+    return variants[props.variant]
   }
 
-  return variants[props.variant || 'primary']
+  // Se não passar nada, usar o padrão Aurea-UI (preto elegante)
+  return {
+    backgroundColor: '#1c1c1e', // $color-black-elevated
+    color: '#ffffff',
+  }
 })
 </script>

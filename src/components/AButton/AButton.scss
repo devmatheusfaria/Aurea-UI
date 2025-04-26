@@ -1,26 +1,48 @@
+@use '@/styles/variables.scss' as *;
+
 .a-button {
   border: none;
   cursor: pointer;
   font-weight: 600;
+  font-family: $font-family-base;
+  background-color: $color-black-elevated;
+  color: $color-white;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   transition: all 0.2s ease-in-out;
-  padding: 0.5rem 1rem;
+  padding: $padding-md;
+  border-radius: $border-radius-default;
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--secondary {
+    background-color: $color-gray-900;
+    color: $color-white;
+  }
+
+  &--danger {
+    background-color: $color-danger;
+    color: $color-white;
+  }
 
   &--sm {
-    font-size: 0.75rem;
-    padding: 0.4rem 0.8rem;
+    font-size: $font-size-sm;
+    padding: $padding-sm;
   }
 
   &--md {
-    font-size: 0.875rem;
-    padding: 0.5rem 1rem;
+    font-size: $font-size-md;
+    padding: $padding-md;
   }
 
   &--lg {
-    font-size: 1rem;
-    padding: 0.75rem 1.25rem;
+    font-size: $font-size-lg;
+    padding: $padding-lg;
   }
 
   &__icon {
@@ -29,5 +51,14 @@
 
   &__icon--right {
     margin-left: auto;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
   }
 }
