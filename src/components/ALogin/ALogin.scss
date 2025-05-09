@@ -1,0 +1,64 @@
+.a-login {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  &__field,
+  &__buttons,
+  &__links {
+    width: 100%;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 0.75rem;
+
+    button {
+      flex: 1;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+
+    button {
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: underline;
+      background-color: transparent;
+    }
+  }
+}
