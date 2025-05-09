@@ -93,4 +93,4 @@ npm run build
 
 ---
 
-> Feito com ❤️ por devs que acreditam em acessibilidade e design centrado no usuário.
+> Feito com ❤️ por Matheus Faria, que acredita em acessibilidade e design centrado no usuário.
