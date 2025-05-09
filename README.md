@@ -1,33 +1,96 @@
-# aurea-ui
+# 🌟 Bem-vindo ao Aurea UI
 
-This template should help get you started developing with Vue 3 in Vite.
+**Aurea UI** é uma biblioteca de componentes moderna, acessível e responsiva desenvolvida com **Vue 3**, **TypeScript** e **SCSS**. Criada para entregar interfaces elegantes com foco em **usabilidade**, **acessibilidade** e **personalização**, a Aurea UI é ideal para equipes que desejam escalar produtos digitais com consistência visual e excelente experiência do usuário.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ Recursos principais
 
-## Type Support for `.vue` Imports in TS
+- ✏️ Design elegante, minimalista e responsivo
+- 🌍 Acessibilidade AA (WCAG) incorporada por padrão
+- ⚖️ Temas escuro/claro com suporte a `prefers-color-scheme`
+- 🪤 Componentes escritos com Composition API e tipagem forte
+- 🌎 Estilo com SCSS e suporte total à customização via variáveis
+- ✨ Integração com Figma e tokens visuais compatíveis
+- ⚙️ Documentação interativa via Storybook
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 🚀 Instalação
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 1. Requisitos
 
-## Project Setup
+- Node.js 18+
+- Vue 3
+- Vite (recomendado)
+
+### 2. Instalando a Aurea UI
+
+```bash
+npm install aurea-ui
+```
+
+ou
+
+```bash
+yarn add aurea-ui
+```
+
+### 3. Registrando os componentes globalmente
+
+```ts
+// main.ts ou main.js
+import { createApp } from 'vue'
+import App from './App.vue'
+import AureaUI from 'aurea-ui'
+import 'aurea-ui/dist/style.css'
+
+const app = createApp(App)
+app.use(AureaUI)
+app.mount('#app')
+```
+
+---
+
+## 📃 Documentação no Storybook
+
+Explore nossa [documentação interativa](http://localhost:6006) para:
+
+- Visualizar os componentes com diferentes estados
+- Ver exemplos práticos e código de uso
+- Testar a acessibilidade e responsividade
+- Ler descrições completas e dicas de uso
+
+---
+
+## 🤝 Contribuição
+
+| Plataforma | Link                                                               |
+| ---------- | ------------------------------------------------------------------ |
+| 💻 GitHub  | [github.com/seu-org/aurea-ui](https://github.com/seu-org/aurea-ui) |
+
+Contribuições são bem-vindas! Crie um fork, envie um PR ou participe das discussões.
+
+---
+
+## 🧪 Desenvolvimento
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Executar em ambiente de desenvolvimento
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Verificar tipos e gerar build de produção
 
 ```sh
 npm run build
 ```
+
+---
+
+> Feito com ❤️ por devs que acreditam em acessibilidade e design centrado no usuário.
