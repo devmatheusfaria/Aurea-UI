@@ -1,0 +1,98 @@
+@use '@/styles/variables.scss' as *;
+
+.a-navbar {
+  width: 100%;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-gray-300;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &-img {
+      height: 32px;
+      width: auto;
+    }
+  }
+
+  &__toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: $color-text;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__items {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+
+      &--open {
+        display: flex;
+        margin-top: 1rem;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: $font-size-md;
+    color: var(--link-color, $color-text);
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--link-hover-color, $color-primary);
+    }
+
+    &--auth {
+      border: 1px solid $color-gray-300;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-weight: 500;
+      background-color: transparent;
+      cursor: pointer;
+      font-family: inherit;
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+
+      &:hover {
+        background-color: $color-gray-100;
+        color: var(--link-hover-color, $color-primary);
+      }
+    }
+  }
+}
