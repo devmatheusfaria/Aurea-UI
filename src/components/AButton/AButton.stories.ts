@@ -5,6 +5,20 @@ const meta: Meta<typeof AButton> = {
   title: 'Components/AButton',
   component: AButton,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `
+  Botão reutilizável, acessível e personalizável com suporte a:
+  - Variações de tamanho (\`sm\`, \`md\`, \`lg\`)
+  - Ícones à esquerda e/ou à direita via Font Awesome
+  - Controle total de cor de fundo, cor do texto e bordas
+  - Suporte a variantes visuais (\`primary\`, \`success\`, \`warning\`, \`danger\`)
+  - Estilo consistente com o design system da Aurea UI
+        `,
+      },
+    },
+  },
   argTypes: {
     label: { control: 'text', description: 'Texto exibido no botão' },
     size: {

@@ -64,8 +64,13 @@ const meta: Meta<typeof AInputPassword> = {
   parameters: {
     docs: {
       description: {
-        component:
-          'O `AInputPassword` é um campo de entrada de senha acessível com suporte a validações visuais dinâmicas, confirmação de senha e personalização de estilo.',
+        component: `
+  Campo de senha moderno e acessível com:
+  - Validação de força de senha com feedback visual (AInstructPassword)
+  - Campo de confirmação de senha opcional
+  - Totalmente personalizável por props como rótulos, placeholders, cores e orientação
+  - Componente reutilizável, integrado à identidade visual do Aurea UI
+        `,
       },
     },
   },

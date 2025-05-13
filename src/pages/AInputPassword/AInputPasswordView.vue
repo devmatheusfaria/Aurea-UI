@@ -6,6 +6,7 @@
       label="Senha"
       placeholder="Digite uma senha segura"
       confirmPlaceholder="Repita sua senha"
+      confirmLabel="Confirmar senha"
       :validate-password="true"
       :confirm-password="true"
       @passwordValidated="(valid) => (passwordIsValid = valid)"

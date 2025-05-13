@@ -32,8 +32,14 @@ const meta: Meta<typeof ANavbar> = {
   parameters: {
     docs: {
       description: {
-        component:
-          'ANavbar é um componente de navegação minimalista e acessível. Ele exibe uma logo (imagem ou texto), uma lista de links de navegação e um botão de autenticação (Login ou Logout), com suporte a menu responsivo. Totalmente personalizável por props e acessível via leitores de tela, atendendo ao nível AA das diretrizes WCAG.',
+        component: `
+  Componente de navegação moderno, acessível e responsivo com:
+  - Exibição de logo por texto ou imagem
+  - Lista de links de navegação personalizáveis
+  - Botão de autenticação (login/logout) dinâmico
+  - Estilo minimalista e consistente com o Aurea UI
+  - Acessibilidade garantida com suporte a leitores de tela (WCAG AA)
+        `,
       },
     },
   },

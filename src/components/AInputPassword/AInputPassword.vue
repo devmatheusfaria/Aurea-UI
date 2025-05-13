@@ -51,8 +51,8 @@
     <!-- Label do campo de confirmação -->
     <label
       v-if="confirmPassword && confirmLabel"
-      class="a-input__label"
-      :style="{ color: labelColor || '#1c1c1e' }"
+      class="a-input__label a-input__label--confirm"
+      :style="{ color: labelColor || 'inherit' }"
       :for="`${inputId}-confirm`"
     >
       {{ confirmLabel }}

@@ -5,6 +5,19 @@ const meta: Meta<typeof AInput> = {
   title: 'Components/AInput',
   component: AInput,
   tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component: `
+  Campo de entrada (input) flexível, acessível e personalizável com:
+  - Suporte a ícones à esquerda e à direita
+  - Rótulo, placeholder, mensagens de erro e texto de ajuda
+  - Controle de tamanho, cor do foco, leitura e desabilitação
+  - Estilo consistente com o design da biblioteca Aurea UI
+        `,
+      },
+    },
+  },
   argTypes: {
     modelValue: { control: 'text', description: 'Valor do input (v-model)' },
     label: { control: 'text', description: 'Texto do rótulo (label)' },

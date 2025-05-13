@@ -18,8 +18,14 @@ const meta: Meta<typeof ALogin> = {
     },
     docs: {
       description: {
-        component:
-          'Componente de login minimalista e moderno utilizando AInput, AInputPassword e AButton. Permite controle dos textos e eventos de login, cadastro e esqueci a senha.',
+        component: `
+  Formulário de login moderno, minimalista e acessível com:
+  - Campos personalizados de usuário e senha
+  - Suporte a ações como login, criação de conta e recuperação de senha
+  - Uso dos componentes \`AInput\`, \`AInputPassword\` e \`AButton\`
+  - Interface responsiva com foco em usabilidade
+  - Estilo consistente com o Aurea UI
+        `,
       },
     },
   },
