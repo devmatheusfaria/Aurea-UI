@@ -1,0 +1,77 @@
+@use '@/styles/variables.scss' as *;
+
+.a-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  &__content {
+    background-color: $color-surface;
+    border-radius: $border-radius-default;
+    border: 1px solid $color-border;
+    padding: 1.25rem;
+    position: relative;
+    font-family: $font-family-base;
+    box-shadow: $box-shadow-soft;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+
+    &.a-modal--sm {
+      max-width: 240px;
+    }
+
+    &.a-modal--md {
+      max-width: 280px;
+    }
+
+    &.a-modal--lg {
+      max-width: 360px;
+    }
+  }
+
+  &__title {
+    color: $color-text;
+    font-weight: 800;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    font-size: $font-size-md;
+    font-weight: 400;
+    color: $color-gray-900;
+    margin-bottom: 1.5rem;
+    word-break: break-word;
+  }
+
+  &__actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  &__close {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: $border-radius-default;
+
+    &:hover {
+      background-color: $color-gray-200;
+    }
+
+    svg {
+      height: 21px;
+      width: 21px;
+    }
+  }
+}
