@@ -1,0 +1,57 @@
+@use '@/styles/variables.scss' as *;
+
+.a-notification {
+  font-family: $font-family-base;
+  width: fit-content;
+  max-width: 320px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 50px;
+  box-shadow: 0 0px 10px rgba(222, 28, 50, 0.5);
+  color: $color-white;
+
+  &__icon {
+    margin-right: 8px;
+    font-size: 1rem;
+
+    .a-notification__fa-icon {
+      color: $color-white !important;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__message {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: $color-white;
+    word-break: break-word;
+  }
+
+  &__close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: $color-white;
+
+    .fa {
+      color: $color-white !important;
+      font-size: 1.1rem;
+    }
+  }
+
+  &.error {
+    background: linear-gradient(to right, #f45c43, #eb3349);
+  }
+
+  &.success {
+    background: linear-gradient(to right, #30d158, #28a745);
+  }
+
+  &.warning {
+    background: linear-gradient(to right, #ffd60a, #ff9f0a);
+  }
+}
