@@ -14,9 +14,6 @@
         :text-color="buttonTextColor"
         @click="emit('click:action')"
       >
-        <template #right>
-          <span aria-hidden="true">&rarr;</span>
-        </template>
       </AButton>
     </div>
   </div>
