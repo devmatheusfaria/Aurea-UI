@@ -1,0 +1,34 @@
+@use '@/styles/variables' as *;
+
+.a-loading {
+  display: inline-block;
+  border-style: solid;
+  border-color: $color-gray-200;
+  border-top-style: solid;
+  border-top-color: inherit;
+  border-radius: 50%;
+  animation: a-loading-spin 0.8s linear infinite;
+  box-shadow: $box-shadow-soft;
+  aspect-ratio: 1 / 1;
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+  }
+}
+
+@keyframes a-loading-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
