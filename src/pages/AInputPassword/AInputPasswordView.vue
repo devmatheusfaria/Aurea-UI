@@ -7,6 +7,7 @@
       placeholder="Digite uma senha segura"
       confirmPlaceholder="Repita sua senha"
       confirmLabel="Confirmar senha"
+      orientation="horizontal"
       :validate-password="true"
       :confirm-password="true"
       @passwordValidated="(valid) => (passwordIsValid = valid)"

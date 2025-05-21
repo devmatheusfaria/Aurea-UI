@@ -1,6 +1,5 @@
 <template>
   <div class="a-input-wrapper">
-    <!-- Label principal do campo de senha -->
     <label
       v-if="label"
       :for="inputId"
@@ -9,8 +8,6 @@
     >
       {{ label }}
     </label>
-
-    <!-- Campo de input da senha principal -->
     <div
       class="a-input__field-wrapper"
       :class="classes"
@@ -25,8 +22,6 @@
         :placeholder="placeholder"
         :aria-invalid="error ? 'true' : 'false'"
       />
-
-      <!-- Botão para alternar visibilidade da senha -->
       <button
         type="button"
         class="a-input__toggle-visibility"
@@ -39,16 +34,12 @@
         <span class="sr-only">{{ showPassword ? 'Ocultar senha' : 'Mostrar senha' }}</span>
       </button>
     </div>
-
-    <!-- Regras de validação da senha, exibidas com componente auxiliar -->
     <AInstructPassword
       v-if="validatePassword"
       v-model="passwordValidated"
       :password="password"
       :orientation="orientation"
     />
-
-    <!-- Label do campo de confirmação -->
     <label
       v-if="confirmPassword && confirmLabel"
       class="a-input__label a-input__label--confirm"
@@ -57,8 +48,6 @@
     >
       {{ confirmLabel }}
     </label>
-
-    <!-- Campo de confirmação da senha -->
     <div
       v-if="confirmPassword"
       class="a-input__field-wrapper"
@@ -72,8 +61,6 @@
         :placeholder="confirmPlaceholder || 'Confirme a senha'"
         :aria-invalid="confirmError ? 'true' : 'false'"
       />
-
-      <!-- Botão para alternar visibilidade da senha de confirmação -->
       <button
         type="button"
         class="a-input__toggle-visibility"
@@ -86,13 +73,10 @@
         <span class="sr-only">{{ showConfirmPassword ? 'Ocultar senha' : 'Mostrar senha' }}</span>
       </button>
     </div>
-
-    <!-- Mensagem de erro de confirmação -->
     <div v-if="confirmError" class="a-input__helper a-input__helper--error">
       As senhas devem ser iguais.
     </div>
 
-    <!-- Texto de ajuda opcional -->
     <div v-else-if="helperText" class="a-input__helper">
       {{ helperText }}
     </div>
@@ -118,11 +102,6 @@ const props = defineProps<{
   labelColor?: string
 }>()
 
-/**
- * Eventos emitidos:
- * - update:modelValue: emite valor do campo principal
- * - passwordValidated: emite booleano indicando se senha é válida
- */
 const emit = defineEmits(['update:modelValue', 'passwordValidated'])
 
 const password = ref(props.modelValue)
