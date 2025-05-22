@@ -1,11 +1,18 @@
 <template>
-  <div class="a-card">
-    <img v-if="image" class="a-card__image" :src="imageSrc" :alt="imageAlt" loading="lazy" />
+  <section class="a-card" role="region" :aria-labelledby="titleId">
+    <img
+      v-if="image"
+      class="a-card__image"
+      :src="imageSrc"
+      :alt="imageAlt || 'Imagem ilustrativa do cartão'"
+      loading="lazy"
+    />
 
     <div class="a-card__content">
-      <h3 class="a-card__title">{{ title }}</h3>
-      <p class="a-card__subtitle" v-if="subtitle">{{ subtitle }}</p>
+      <h3 :id="titleId" class="a-card__title">{{ title }}</h3>
+      <p v-if="subtitle" class="a-card__subtitle">{{ subtitle }}</p>
       <p class="a-card__description">{{ description }}</p>
+
       <AButton
         v-if="buttonText"
         class="a-card__button"
@@ -13,10 +20,9 @@
         :background-color="buttonBgColor"
         :text-color="buttonTextColor"
         @click="emit('click:action')"
-      >
-      </AButton>
+      />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -43,6 +49,8 @@ const imageSrc = computed(() => {
     return ''
   }
 })
+
+const titleId = `a-card-title-${Math.random().toString(36).substring(2, 8)}`
 </script>
 
 <style scoped src="./ACard.scss" />

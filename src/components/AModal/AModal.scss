@@ -55,6 +55,10 @@
     flex-wrap: wrap;
   }
 
+  &__icon {
+    font-size: 1.2rem;
+  }
+
   &__close {
     position: absolute;
     top: 17px;
@@ -67,11 +71,6 @@
 
     &:hover {
       background-color: $color-gray-200;
-    }
-
-    svg {
-      height: 21px;
-      width: 21px;
     }
   }
 }

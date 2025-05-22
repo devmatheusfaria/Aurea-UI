@@ -2,19 +2,7 @@
   <div class="a-modal" role="dialog" aria-modal="true" :aria-labelledby="titleId" v-if="show">
     <div class="a-modal__content" :class="modalSizeClass">
       <button class="a-modal__close" aria-label="Fechar" @click="emit('close')">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="a-modal__icon"
-        >
-          <line x1="18" y1="6" x2="6" y2="18" />
-          <line x1="6" y1="6" x2="18" y2="18" />
-        </svg>
+        <i class="fa fa-times a-modal__icon" aria-hidden="true"></i>
       </button>
 
       <h2 class="a-modal__title" :id="titleId">{{ title }}</h2>
