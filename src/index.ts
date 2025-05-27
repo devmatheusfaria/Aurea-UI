@@ -1,10 +1,23 @@
-export { default as AButton } from './components/AButton/AButton.vue'
-export { default as ACard } from './components/ACard/ACard.vue'
-export { default as AInput } from './components/AInput/AInput.vue'
-export { default as AInputPassword } from './components/AInputPassword/AInputPassword.vue'
-export { default as ALoading } from './components/ALoading/ALoading.vue'
-export { default as ALogin } from './components/ALogin/ALogin.vue'
-export { default as AModal } from './components/AModal/AModal.vue'
-export { default as ANavbar } from './components/ANavbar/ANavbar.vue'
-export { default as ANotification } from './components/ANotification/ANotification.vue'
-export { default as ARegister } from './components/ARegister/ARegister.vue'
+import AButton from './components/AButton/AButton.vue'
+import ACard from './components/ACard/ACard.vue'
+import AInput from './components/AInput/AInput.vue'
+import AInputPassword from './components/AInputPassword/AInputPassword.vue'
+import ALoading from './components/ALoading/ALoading.vue'
+import ALogin from './components/ALogin/ALogin.vue'
+import AModal from './components/AModal/AModal.vue'
+import ANavbar from './components/ANavbar/ANavbar.vue'
+import ANotification from './components/ANotification/ANotification.vue'
+import ARegister from './components/ARegister/ARegister.vue'
+
+export {
+  AButton,
+  ACard,
+  AInput,
+  AInputPassword,
+  ALoading,
+  ALogin,
+  AModal,
+  ANavbar,
+  ANotification,
+  ARegister,
+}

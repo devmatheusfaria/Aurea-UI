@@ -42,13 +42,7 @@ const props = defineProps({
 
 const emit = defineEmits(['click:action'])
 
-const imageSrc = computed(() => {
-  try {
-    return props.image ? new URL(`../../assets/${props.image}`, import.meta.url).href : ''
-  } catch {
-    return ''
-  }
-})
+const imageSrc = computed(() => props.image || '')
 
 const titleId = `a-card-title-${Math.random().toString(36).substring(2, 8)}`
 </script>

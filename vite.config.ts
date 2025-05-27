@@ -1,29 +1,26 @@
-import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
-import vueDevTools from 'vite-plugin-vue-devtools'
+import path from 'node:path'
 
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
     dts({
-      entryRoot: 'src',
-      outDir: 'dist',
+      include: ['src'],
+      outDir: 'dist/types',
+      copyDtsFiles: true,
+      staticImport: true,
+      cleanVueFileName: true,
+      logLevel: 'info',
     }),
   ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
   build: {
     lib: {
-      entry: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
+      entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'AureaUI',
       fileName: 'index',
-      formats: ['es', 'cjs'],
+      formats: ['es'],
     },
     rollupOptions: {
       external: ['vue'],
@@ -35,5 +32,10 @@ export default defineConfig({
     },
     outDir: 'dist',
     emptyOutDir: true,
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
   },
 })

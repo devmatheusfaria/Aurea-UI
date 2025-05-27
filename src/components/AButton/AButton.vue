@@ -60,9 +60,8 @@ const variantStyles = computed(() => {
     return variants[props.variant]
   }
 
-  // Se não passar nada, usar o padrão Aurea-UI (preto elegante)
   return {
-    backgroundColor: '#1c1c1e', // $color-black-elevated
+    backgroundColor: '#1c1c1e',
     color: '#ffffff',
   }
 })
