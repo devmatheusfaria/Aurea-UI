@@ -10,11 +10,11 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.mjs",
+      "types": "./dist/types/index.d.ts"
     }
   },
-  "type": "commonjs",
+  "type": "module",
   "keywords": [
     "vue3",
     "ui",
