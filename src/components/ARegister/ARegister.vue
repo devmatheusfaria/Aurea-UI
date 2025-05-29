@@ -31,7 +31,7 @@
         :confirm-password="showConfirmPassword"
         :confirmLabel="confirmPasswordLabel"
         :confirmPlaceholder="confirmPasswordPlaceholder"
-        @passwordValidated="(valid) => (passwordIsValid = valid)"
+        @passwordValidated="(valid: any) => (passwordIsValid = valid)"
       />
     </div>
 

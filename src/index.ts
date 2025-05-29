@@ -1,3 +1,5 @@
+import './styles/index.scss'
+
 import AButton from './components/AButton/AButton.vue'
 import ACard from './components/ACard/ACard.vue'
 import AInput from './components/AInput/AInput.vue'
