@@ -122,17 +122,16 @@ const updatePassword = (val: string) => {
   emit('update:modelValue', val)
 }
 
-watch(password, () => {
-  if (!props.confirmPassword) {
-    emit('passwordValidated', props.validatePassword ? passwordValidated.value : true)
-  } else {
-    emit('passwordValidated', passwordValidated.value && !confirmError.value)
-  }
-})
+watch(
+  [password, confirmPasswordValue],
+  () => {
+    const isValid = props.validatePassword ? passwordValidated.value : true
+    const noError = props.confirmPassword ? confirmPasswordValue.value === password.value : true
 
-watch(confirmPasswordValue, () => {
-  emit('passwordValidated', passwordValidated.value && !confirmError.value)
-})
+    emit('passwordValidated', isValid && noError)
+  },
+  { flush: 'post' },
+)
 
 const classes = computed(() => ({
   'a-input--error': confirmError.value,
