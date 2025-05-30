@@ -1,0 +1,8 @@
+import{d as m,r as p,f as v,l as f,j as t,v as _,t as b,o as g}from"./vue.esm-bundler-EKJPWiZt.js";import{A}from"./ANavbar-BtDfMtCs.js";import{_ as N}from"./_plugin-vue_export-helper-DlAUqK2U.js";const V={class:"navbar-view"},h={class:"navbar-view__content"},i=m({__name:"ANavbarView",setup(w){const e=p(!1),c=[{label:"Home",href:"#"},{label:"Sobre",href:"#"},{label:"Contato",href:"#"}];function u(){e.value=!0}function d(){e.value=!1}return(x,a)=>(g(),v("section",V,[f(A,{logo:"AureaUI",items:c,"is-authenticated":e.value,"login-text":"Entrar","logout-text":"Sair","link-color":"#1c1c1e","link-hover-color":"#0a84ff",onLogin:u,onLogout:d},null,8,["is-authenticated"]),t("main",h,[a[1]||(a[1]=t("h1",null,"Bem-vindo ao Projeto com ANavbar",-1)),t("p",null,[a[0]||(a[0]=_(" Status do usuário: ")),t("strong",null,b(e.value?"Autenticado":"Visitante"),1)])])]))}}),l=N(i,[["__scopeId","data-v-d54875e2"]]);i.__docgenInfo={exportName:"default",displayName:"ANavbarView",description:"",tags:{},sourceFiles:["/Users/matheusvogeldefaria/Documents/Workspace/aurea-ui/Aurea-UI/src/pages/ANavBar/ANavbarView.vue"]};const S={title:"Pages/ANavbarView",component:l,tags:["autodocs"]},o={render:()=>({components:{ANavbarView:l},template:"<ANavbarView />"})};var r,n,s;o.parameters={...o.parameters,docs:{...(r=o.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  render: () => ({
+    components: {
+      ANavbarView
+    },
+    template: '<ANavbarView />'
+  })
+}`,...(s=(n=o.parameters)==null?void 0:n.docs)==null?void 0:s.source}}};const D=["Default"];export{o as Default,D as __namedExportsOrder,S as default};

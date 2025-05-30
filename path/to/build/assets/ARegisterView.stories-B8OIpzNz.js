@@ -1,0 +1,8 @@
+import{d as p,r as d,k as u,o as g}from"./vue.esm-bundler-EKJPWiZt.js";import{A as f}from"./ARegister-CEk6yhBZ.js";import"./AInput-BBwF6aFH.js";import"./AInputPassword-BonMNmf-.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";import"./AButton-DK214N5z.js";const a=p({__name:"ARegisterView",setup(w){const o=d({name:"",email:"",password:""});function l(r){console.log("Cadastro realizado:",r)}function m(){console.log("Voltar para login")}return(r,t)=>(g(),u(f,{modelValue:o.value,"onUpdate:modelValue":t[0]||(t[0]=c=>o.value=c),title:"Criar conta","name-label":"Nome completo","email-label":"E-mail","password-label":"Senha","confirm-password-label":"Confirmar senha","name-placeholder":"Digite seu nome completo","email-placeholder":"Digite seu e-mail","password-placeholder":"Crie uma senha segura","confirm-password-placeholder":"Repita sua senha","register-text":"Cadastrar","back-to-login-text":"Já tenho conta","show-confirm-password":!0,onRegister:l,onBack:m},null,8,["modelValue"]))}});a.__docgenInfo={exportName:"default",displayName:"ARegisterView",description:"",tags:{},sourceFiles:["/Users/matheusvogeldefaria/Documents/Workspace/aurea-ui/Aurea-UI/src/pages/ARegister/ARegisterView.vue"]};const x={title:"Pages/ARegisterView",component:a,tags:["autodocs"]},e={render:()=>({components:{ARegisterView:a},template:"<ARegisterView />"})};var s,n,i;e.parameters={...e.parameters,docs:{...(s=e.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  render: () => ({
+    components: {
+      ARegisterView
+    },
+    template: '<ARegisterView />'
+  })
+}`,...(i=(n=e.parameters)==null?void 0:n.docs)==null?void 0:i.source}}};const C=["Default"];export{e as Default,C as __namedExportsOrder,x as default};

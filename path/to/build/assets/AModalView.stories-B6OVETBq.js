@@ -1,0 +1,8 @@
+import{d as i,r as d,f as p,l as u,o as m}from"./vue.esm-bundler-EKJPWiZt.js";import{A as f}from"./AModal-wzluoCqf.js";import"./AButton-DK214N5z.js";import"./_plugin-vue_export-helper-DlAUqK2U.js";const A={style:{padding:"2rem",display:"flex","justify-content":"center"}},a=i({__name:"AModalView",setup(g){const e=d(!0);function n(){console.log("Cookies aceitos"),e.value=!1}function r(){console.log("Cookies recusados"),e.value=!1}function l(){console.log("Fechou o modal"),e.value=!1}return(_,h)=>(m(),p("div",A,[u(f,{show:e.value,title:"Política de Cookies",message:"Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com a nossa política.","accept-text":"Aceitar","reject-text":"Recusar","accept-bg-color":"#222","reject-bg-color":"#ececec","accept-text-color":"#ffffff","reject-text-color":"#222222",size:"md",onAccept:n,onReject:r,onClose:l},null,8,["show"])]))}});a.__docgenInfo={exportName:"default",displayName:"AModalView",description:"",tags:{},sourceFiles:["/Users/matheusvogeldefaria/Documents/Workspace/aurea-ui/Aurea-UI/src/pages/AModal/AModalView.vue"]};const V={title:"Pages/AModalView",component:a,tags:["autodocs"]},o={render:()=>({components:{AModalView:a},template:"<AModalView />"})};var t,c,s;o.parameters={...o.parameters,docs:{...(t=o.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  render: () => ({
+    components: {
+      AModalView
+    },
+    template: '<AModalView />'
+  })
+}`,...(s=(c=o.parameters)==null?void 0:c.docs)==null?void 0:s.source}}};const k=["Default"];export{o as Default,k as __namedExportsOrder,V as default};
