@@ -8,7 +8,6 @@
 
 - ✏️ Design elegante, minimalista e responsivo
 - 🌍 Acessibilidade AA (WCAG) incorporada por padrão
-- ⚖️ Temas escuro/claro com suporte a `prefers-color-scheme`
 - 🪤 Componentes escritos com Composition API e tipagem forte
 - 🌎 Estilo com SCSS e suporte total à customização via variáveis
 - ✨ Integração com Figma e tokens visuais compatíveis
@@ -23,6 +22,8 @@
 - Node.js 18+
 - Vue 3
 - Vite (recomendado)
+- Pinia (recomendado)
+- Font Awesome (para ícones)
 
 ### 2. Instalando a Aurea UI
 
@@ -39,13 +40,15 @@ yarn add aurea-ui
 ### 3. Registrando os componentes globalmente
 
 ```ts
-// main.ts ou main.js
+// main.js
 import { createApp } from 'vue'
 import App from './App.vue'
-import AureaUI from 'aurea-ui'
-import 'aurea-ui/dist/style.css'
 
-const app = createApp(App)
+import AureaUI from 'aurea-ui'
+import 'aurea-ui/dist/index.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
+app.use(createPinia())
 app.use(AureaUI)
 app.mount('#app')
 ```
@@ -82,7 +85,7 @@ npm install
 ### Executar em ambiente de desenvolvimento
 
 ```sh
-npm run dev
+npm run storybook
 ```
 
 ### Verificar tipos e gerar build de produção
