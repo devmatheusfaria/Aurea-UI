@@ -57,7 +57,7 @@ app.mount('#app')
 
 ## 📃 Documentação no Storybook
 
-Explore nossa [documentação interativa](http://localhost:6006) para:
+Explore nossa [documentação interativa](https://aurea-ui.netlify.app/?path=/docs/comece-com-aurea-ui--docs) para:
 
 - Visualizar os componentes com diferentes estados
 - Ver exemplos práticos e código de uso
