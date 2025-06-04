@@ -40,7 +40,7 @@ yarn add aurea-ui
 ### 3. Registrando os componentes globalmente
 
 ```ts
-// main.js
+// main.ts
 import { createApp } from 'vue'
 import App from './App.vue'
 
