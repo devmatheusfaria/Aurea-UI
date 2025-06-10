@@ -68,9 +68,9 @@ Explore nossa [documentação interativa](https://aurea-ui.netlify.app/?path=/do
 
 ## 🤝 Contribuição
 
-| Plataforma | Link                                                               |
-| ---------- | ------------------------------------------------------------------ |
-| 💻 GitHub  | [github.com/seu-org/aurea-ui](https://github.com/seu-org/aurea-ui) |
+| Plataforma | Link                                                                               |
+| ---------- | ---------------------------------------------------------------------------------- |
+| 💻 GitHub  | [github.com/devmatheusfaria/Aurea-UI](https://github.com/devmatheusfaria/Aurea-UI) |
 
 Contribuições são bem-vindas! Crie um fork, envie um PR ou participe das discussões.
 
